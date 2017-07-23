@@ -1,8 +1,12 @@
 # config valid only for current version of Capistrano
 lock "3.8.2"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "emerson-and-stone"
+set :repo_url, "git@github.com:heliosca/emerson-and-stone.git"
+set :deploy_to, '/home/deploy/emerson-and-stone'
+append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
