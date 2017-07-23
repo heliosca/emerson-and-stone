@@ -3,7 +3,7 @@ lock "3.8.2"
 
 set :application, "emerson-and-stone"
 set :repo_url, "git@github.com:heliosca/emerson-and-stone.git"
-set :deploy_to, '/home/deploy/emerson-and-stone'
+set :deploy_to, '/home/ubuntu/emerson-and-stone'
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
