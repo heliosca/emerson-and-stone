@@ -12,6 +12,7 @@ gem 'administrate', '~> 0.3.0'
 gem 'autoprefixer-rails'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bourbon' # added to prevent high voltage bourbon unreadable error
+gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'pg'
 gem 'puma', '~> 3.0'
