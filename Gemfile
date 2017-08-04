@@ -13,6 +13,7 @@ gem 'autoprefixer-rails'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bourbon' # added to prevent high voltage bourbon unreadable error
 gem 'font-awesome-rails'
+gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'puma', '~> 3.0'
