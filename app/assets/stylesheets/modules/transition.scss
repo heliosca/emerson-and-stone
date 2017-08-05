@@ -9,7 +9,7 @@
 /* Animating */
 .animating.transition {
   backface-visibility: hidden;
-  visibility: visible !important;
+  visibility: visible;
 }
 
 /* Loading */
@@ -27,8 +27,8 @@
 
 /* Visible */
 .visible.transition {
-  display: block !important;
-  visibility: visible !important;
+  display: block;
+  visibility: visible;
   
 /*  backface-visibility: @backfaceVisibility;
   transform: @use3DAcceleration;*/
