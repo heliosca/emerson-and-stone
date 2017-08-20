@@ -1,7 +1,7 @@
 module Mailchimp
   class Client
     include HTTParty
-    base_uri "https://us11.api.mailchimp.com/3.0"
+    base_uri "https://us16.api.mailchimp.com/3.0"
 
     def initialize(email)
       @email = email
@@ -18,11 +18,11 @@ module Mailchimp
     private
 
       def body
-        {email_address: @user.email, status: "subscribed", merge_fields: {FNAME: "First Name", LNAME: "Last Name"}}.to_json
+        { email_address: @email, status: "subscribed" }.to_json
       end
 
       def auth
-        {username: 'apikey', password: api_key}
+        { username: 'apikey', password: api_key }
       end
 
       def list_id
