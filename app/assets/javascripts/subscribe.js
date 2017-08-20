@@ -4,7 +4,7 @@ var globals = {
 };
 
 document.addEventListener("turbolinks:load", function() {
-  var esCookie = document.cookie.match(/^(.*;)?\s*HeadwatersCaCookie\s*=\s*[^;]+(.*)?$/);
+  var esCookie = document.cookie.match(/^(.*;)?\s*EmersonAndStoneCookie\s*=\s*[^;]+(.*)?$/);
   if (!esCookie) {
     if (!globals.optedOut) {
       if (!globals.subscribeShown) {
@@ -26,7 +26,6 @@ document.addEventListener("turbolinks:load", function() {
 
     $("#subscribe-form").submit(function() {
       event.preventDefault();
-      console.log($(this).attr('action'));
 
       var url = $(this).attr('action'),
           data = $(this).serialize(),
